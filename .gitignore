@@ -1,4 +1,5 @@
-**/.ipynb_checkpoints/
+/aktuell/.ipynb_checkpoints
+/aktuell/UML/.ipynb_checkpoints
 *.db
 *.pyc
 /Notebook-Start.lnk
