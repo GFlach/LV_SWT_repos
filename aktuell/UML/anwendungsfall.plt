@@ -3,7 +3,7 @@
 left to right direction
 
 :Kunde: as N
-:Service: as S
+:Servicepersonal: as S
 :DB-Waren: as DBW
 :DB-Warenkorb: as DBWK
 :DB-Konto: as DBK
@@ -13,7 +13,7 @@ usecase (Artikel erfassen) as AE
 usecase (Warenkorb manipulieren) as WKM
 usecase (Bezahlen) as B
 usecase (Kasse räumen) as KR
-usecase (Wartung) as W
+usecase (Wartung/Service) as W
 
 N -- AE
 N -- WKM
@@ -30,5 +30,6 @@ S -- WKM
 S -- W
     
 W -- DBW
+W -- DBWK
 }
 @enduml
