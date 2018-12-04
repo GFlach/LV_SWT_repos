@@ -1,27 +1,25 @@
 
 @startuml
-participant ":Applikation" as A
-participant ":Datenbank" as D
-
-note left of A: Sendeereignis
-A -> D: getDaten()
-activate A
-activate D
-
-note right of D: Ausfuehrungsspezifikation
-D --> A: x = getDaten(i):TRUE
-
-note left of A: Empfangsereignis
-
-deactivate D
-
-
-A -> A: verarbeiteDaten()
-activate A
-A --> A:
-deactivate A
-[o-> A: found
-A ->o]: lost
-destroy A
-destroy D
+:Ready;
+:next(o)|
+:Receiving;
+split
+ :nak(i)<
+ :ack(o)>
+split again
+ :ack(i)<
+ :next(o)
+ on several line|
+ :i := i + 1]
+ :ack(o)>
+split again
+ :err(i)<
+ :nak(o)>
+split again
+ :foo/
+split again
+ :i > 5}
+stop
+end split
+:finish;
 @enduml
