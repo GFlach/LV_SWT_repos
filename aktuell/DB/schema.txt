@@ -1,0 +1,16 @@
+Modul
+Modulname VARCHAR, WLV INT, WLUE INT, WLP INT, WLS INT, Semester VARCHAR, Verantwortlicher VARCHAR, Pruefer_1 VARCHAR, Pruefer_2 VARCHAR
+
+Dozent
+Modulname VARCHAR, HSL_Name VARCHAR
+
+HSL
+HSL_Name VARCHAR, Vorname VARCHAR, Grad VARCHAR, email VARCHAR
+
+Kennnummer
+Modulname VARCHAR, Pruefungsordnung VARCHAR, Pruefungsleistung VARCHAR
+
+Studiengang
+Name VARCHAR, Pruefungsordnung VARCHAR
+
+
