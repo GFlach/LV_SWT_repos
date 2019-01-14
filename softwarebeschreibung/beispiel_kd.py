@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Created on Sun Jan  6 12:20:01 2019
 
@@ -6,6 +6,8 @@ Created on Sun Jan  6 12:20:01 2019
 """
 
 ## Dokumentation für die Klasse Fakultaet
+#
+# hier wird es ausführlicher beschrieben
 #
 class Fakultaet():
     def __init__(self, bz ='', adr = '', anz_ma = 0, dk = ''):
